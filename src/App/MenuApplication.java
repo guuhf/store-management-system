@@ -83,7 +83,7 @@ public class MenuApplication {
                         controleLogins.verificarPermissaoAdm();
                         System.out.println("Qual o número do produto que deseja adicionar estoque?");
                         int escolhaProduto = scanner.nextInt();
-                        System.out.println("Qiantos produtos deseja adicionar?");
+                        System.out.println("Quantos produtos deseja adicionar?");
                         int valorAdicionar = scanner.nextInt();
                         controleProdutos.adicionarEstoque(escolhaProduto, valorAdicionar);
                     } catch (ConflictException | AuthException e) {
