@@ -83,7 +83,7 @@ public class MenuApplication {
                         controleLogins.verificarPermissaoAdm();
                         System.out.println("Qual o número do produto que deseja adicionar estoque?");
                         int escolhaProduto = scanner.nextInt();
-                        System.out.println("Qual quantidade deseja adicionar?");
+                        System.out.println("Qiantos produtos deseja adicionar?");
                         int valorAdicionar = scanner.nextInt();
                         controleProdutos.adicionarEstoque(escolhaProduto, valorAdicionar);
                     } catch (ConflictException | AuthException e) {
@@ -103,7 +103,7 @@ public class MenuApplication {
                         System.out.println("Qual o número do produto que deseja comprar?");
                         int numeroCompra = scanner.nextInt();
 
-                        System.out.println("Qual a quantidade da compra?");
+                        System.out.println("Quantos produtos deseja comprar?");
                         int quantidadeCompra = scanner.nextInt();
 
                         controleCompras.comprarProduto(numeroCompra, controleLogins.getUsuarioLogado(), quantidadeCompra);

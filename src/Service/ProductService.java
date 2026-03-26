@@ -23,7 +23,7 @@ public class ProductService {
                 return buscaProduto;
             }
         }
-        throw new ConflictException("Produto inexistente!");
+        throw new ConflictException("Produto não existe!");
     }
 
     public void adicionarEstoque(int numeroBusca, int valorAdicionar) {
